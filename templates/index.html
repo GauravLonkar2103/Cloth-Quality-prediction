@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quality Cloth Prediction</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Fashion Fit Predictor</h1>
+    <form action="/predict" method="POST">
+      <div class="form-group">
+        <label for="size">Size (0-26):</label>
+        <input type="number" id="size" name="size" min="0" max="26" required>
+      </div>
+
+      <div class="form-group">
+        <label for="cup-size">Cup Size:</label>
+        <select id="cup-size" name="cup-size" required>
+          <option value="0">A</option>
+          <option value="1">AA</option>
+          <option value="2">B</option>
+          <option value="3">C</option>
+          <option value="4">D</option>
+          <option value="5">DD/E</option>
+          <option value="6">DDD/F</option>
+          <option value="7">DDDD/G</option>
+          <option value="8">H</option>
+          <option value="9">I</option>
+          <option value="10">J</option>
+          <option value="11">K</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="bra-size">Bra Size (32-38):</label>
+        <input type="number" id="bra-size" name="bra-size" min="32" max="38" required>
+      </div>
+
+      <div class="form-group">
+        <label for="category">Category:</label>
+        <select id="category" name="category" required>
+          <option value="0">Bottoms</option>
+          <option value="1">Dresses</option>
+          <option value="2">New</option>
+          <option value="3">Outerwear</option>
+          <option value="4">Sale</option>
+          <option value="5">Tops</option>
+          <option value="6">Wedding</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="length">Length:</label>
+        <select id="length" name="length" required>
+          <option value="0">Just Right</option>
+          <option value="1">Slightly Long</option>
+          <option value="2">Slightly Short</option>
+          <option value="3">Very Long</option>
+          <option value="4">Very Short</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="fit">Fit:</label>
+        <select id="fit" name="fit" required>
+          <option value="0">Fit</option>
+          <option value="1">Large</option>
+          <option value="2">Small</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="shoe-size">Shoe Size (5-11.5):</label>
+        <input type="number" id="shoe-size" name="shoe-size" min="5" max="11.5" step="0.5" required>
+      </div>
+
+      <div class="form-group">
+        <label for="shoe-width">Shoe Width:</label>
+        <select id="shoe-width" name="shoe-width" required>
+          <option value="0">Average</option>
+          <option value="1">Narrow</option>
+          <option value="2">Wide</option>
+        </select>
+      </div>
+
+      <button type="submit" class="submit-btn">Predict Quality</button>
+    </form>
+  </div>
+</body>
+</html>

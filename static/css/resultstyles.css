@@ -1,0 +1,68 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #6c63ff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.container {
+  text-align: center;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  color: #333;
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Title */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #6c63ff;
+}
+
+/* Result Card */
+.result-card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.result-card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.quality-score {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #6c63ff;
+  margin: 10px 0;
+}
+
+/* Back Button */
+.back-btn {
+  background: #6c63ff;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+  background: #574bff;
+}
